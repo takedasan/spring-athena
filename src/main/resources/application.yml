@@ -1,6 +1,7 @@
 spring:
   datasource:
-    url: jdbc:awsathena://athena.ap-northeast-1.amazonaws.com:443;s3_staging_dir=s3//takeda-athena-results
+    driver-class-name: com.simba.athena.jdbc.Driver
+    url: jdbc:awsathena://athena.ap-northeast-1.amazonaws.com:443;s3_staging_dir=s3://takeda-athena-results
 
 athena:
   database: takedaathena

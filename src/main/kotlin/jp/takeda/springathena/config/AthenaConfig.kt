@@ -35,7 +35,7 @@ class AthenaConfig {
             val connectionProperties = Properties()
             connectionProperties.setProperty(
                     "aws_credentials_provider_class",
-                    "com.amazonaws.auth.profile.ProfileCredentialsProvider"
+                    "com.simba.athena.amazonaws.auth.DefaultAWSCredentialsProviderChain"
             )
             setConnectionProperties(connectionProperties)
         }
